@@ -1,0 +1,71 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="20dp"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+   <Switch
+       android:id="@+id/strUpdateLoc"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:checked="true"
+       android:text="Update Location"
+       android:textOn="On"
+       android:textOff="Off"
+       android:textSize="18sp"
+       android:layout_margin="10dp"
+       />
+
+    <Switch
+        android:id="@+id/strMuteChat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Mute Chat"
+        android:textOn="On"
+        android:textOff="Off"
+        android:textSize="18sp"
+        android:layout_margin="10dp"/>
+
+
+    <Switch
+        android:id="@+id/Unit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Measurement Unit"
+        android:textOn="KM"
+        android:textOff="Miles"
+        android:textSize="18sp"
+        android:layout_margin="10dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/text_view_id"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Distance"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            android:textColor="#AF2f2f"/>
+
+        <Spinner
+            android:id="@+id/radius_spinner"
+            android:layout_gravity="right"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+    </RelativeLayout>
+
+
+
+</LinearLayout>
